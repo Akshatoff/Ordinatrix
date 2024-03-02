@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordin@Trix 24</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+
+    <div class="section" id="home">
+        <img src="./assets/dandabanda.png" alt="Dandabanda" class="card" id="danda-banda">
+
+        <h1 class="text" id="heading">Ordin@Trix 24.0</h1>
+        <p class="text" id="info">It all started 19 years ago. A fusion of creativity, talent and skill is what
+            Ordin@trix is all about. Ordin@trix has evolved through the years moving from an interschool festival at the
+            state level to an international event. Over the years we have had students from China, Muscat, Japan and
+            other countries as regular participants.</p>
+    </div>
+    <div id="spacer"></div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.39/dist/lenis.min.js"></script>
+    <script>
+
+        let tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#danda-banda",
+                start: "-5% left",
+                end: "200% center",
+                scrub: true,
+                markers: false
+            }
+        })
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".text",
+                start: "bottom 80%", // Start the animation when 80% of the element is visible in the viewport
+                end: "bottom 20%", // End the animation when 20% of the element is still visible in the viewport
+                scrub: true
+            }
+        })
+
+
+        tl.to('#danda-banda', {
+            x: 350,
+            y: 400,
+        })
+
+        tl2.to(".text", {
+            opacity: 0,
+
+        })
+
+        //Smooth Scroll
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+            console.log(e)
+        })
+
+        lenis.on('scroll', ScrollTrigger.update)
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+        })
+
+        gsap.ticker.lagSmoothing(0)
+
+    </script>
+
+</body>
+
+</html>
