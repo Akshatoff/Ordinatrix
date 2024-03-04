@@ -3,6 +3,10 @@ const dandabanda = document.getElementById("danda-banda");
 const heading = document.getElementById("heading");
 const info = document.getElementById("info");
 const pyrologo = document.getElementById("pyrologo");
+const headingabout = document.getElementById("heading-about");
+const infoabout = document.getElementById("aboutinfo");
+const aboutbtn = document.getElementById("events");
+
 
 gsap.set("#pyrologo", {
     width: "5rem",
@@ -29,14 +33,14 @@ let tl3 = gsap.timeline({
         markers: false
     }}); // Define the timeline without scrollTrigger initially
 
-// let tl2 = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: ".text",
-//         start: "bottom 80%", // Start the animation when 80% of the element is visible in the viewport
-//         end: "bottom 20%", // End the animation when 20% of the element is still visible in the viewport
-//         scrub: true
-//     }
-// });
+let tl2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#events-page",
+        start: "-5% right", // Start the animation when 80% of the element is visible in the viewport
+        end: "200% center", // End the animation when 20% of the element is still visible in the viewport
+        scrub: true
+    }
+});
 
 window.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
@@ -80,6 +84,27 @@ window.addEventListener("DOMContentLoaded", function () {
             ease: "power4.out"
         });
     }, 10);
+
+    function Animateabout(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                gsap.to("#heading-about", {opacity: 1, duration: 1, delay: 0.5});
+                gsap.to('#aboutinfo', { opacity: 1, duration: 1, delay: 0.7 });
+                gsap.to('#events', { opacity: 1, duration: 1, delay: 0.9 });
+                observer.unobserve(entry.target);
+            }
+        });
+    }
+
+    const aboutheadingobserver = new IntersectionObserver(Animateabout, {
+        root: null,
+        threshold: 0.9
+    });
+
+    aboutheadingobserver.observe(headingabout)
+    aboutheadingobserver.observe(infoabout)
+    aboutheadingobserver.observe(aboutbtn)
+
 });
 
 tl.to('#danda-banda', {
@@ -87,6 +112,12 @@ tl.to('#danda-banda', {
     y: 580,
   
 });
+tl2.to("#danda-banda", {
+    x: 10,
+    y: 1580,
+    width: "-5rem",
+    height: "-5rem"
+})
 
 
 //Smooth Scroll
