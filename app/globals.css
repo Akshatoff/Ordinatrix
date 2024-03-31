@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 0, 0, 0;
+	--background-end-rgb: 0, 0, 0;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(
+			to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))
+		)
+		rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.rotate {
+	text-orientation: mixed;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+	background: #1897ff;
+	background: linear-gradient(to left, #90e0ef 36%, #00000000 72%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.guidelines {
+	text-orientation: mixed;
+	background: #1897ff;
+	background: linear-gradient(to bottom, #76c5c8 36%, #00000000 76%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.team {
+	text-orientation: mixed;
+	background: #1897ff;
+	background: linear-gradient(to bottom, #76c5c8 36%, #00000000 68%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.guidelinesGradient {
+	background: linear-gradient(to bottom, #003e53, #000d11);
+}
+
+.slide {
+	transition: all 0.5s;
+}
+.slide:not(.selected) {
+	opacity: 0.5;
+	transition: all 0.5s;
+}
+
+.eventName {
+	background: #81cccf;
+	background: linear-gradient(to bottom, #81cccf 0%, #dcfffdc2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.closeCross {
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
+	position: relative;
+}
+.closeCross:hover {
+	opacity: 1;
+}
+.closeCross:before,
+.closeCross:after {
+	position: absolute;
+	left: 15px;
+	content: " ";
+	height: 35px;
+	width: 4px;
+	background-color: #fff;
+}
+.closeCross:before {
+	transform: rotate(45deg);
+}
+.closeCross:after {
+	transform: rotate(-45deg);
+}
+
+@media (max-height: 900px) {
+	.eventTitle {
+		font-size: 5em;
+	}
+}
+
+main {
+	scroll-snap-type: x mandatory;
+}
+
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #000925;
+}
+::-webkit-scrollbar-thumb {
+	background: #0061cf;
+}
