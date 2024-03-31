@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { Montserrat } from "next/font/google";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 import React, { useEffect, useRef } from "react";
@@ -17,18 +14,7 @@ import { useOnClickOutside, useIntersectionObserver } from 'usehooks-ts'
 const montserrat = Montserrat({ subsets: ["latin"] });
 const helvetica = localFont({ src: "../public/fonts/helveticaneue.woff2" });
 export default function Home() {
-	
-	const [currentSlide, setcurrentSlide] = React.useState(0);
-	
-	const settings = {
-		dots: false,
-		infinite: true,
-		speed: 500,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		beforeChange: (current, next) => setcurrentSlide(next),
-	};
-	
+
 	const navItems = [
 		{
 			name: "Home",
@@ -991,7 +977,6 @@ export default function Home() {
 				/>
 			</main>
 			<div className="guidelinesGradient">
-			
 				<main
 					id="about"
 					className={
@@ -999,8 +984,6 @@ export default function Home() {
 						montserrat.className
 					}
 				>
-				
-				
 					<div
 						onMouseEnter={() => setHoveredLeft(true)}
 						onMouseLeave={() => setHoveredLeft(false)}
@@ -1085,18 +1068,6 @@ export default function Home() {
 						{/* Radial gradient for the cute fade */}
 						<div className="absolute inset-0 [mask-image:radial-gradient(400px_at_50%_80%,white,transparent)] bg-black/50 dark:bg-black/90" />
 					</div>
-				
-					
-					<div
-						className={
-							"guidelines text-[15vh] leading-none z-0 mt-[3rem] " +
-							montserrat.className
-						}
-					>
-						GUIDELINES
-					</div>
-					
-		
 				</main>
 				<main
 					id="guidelines"
