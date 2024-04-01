@@ -108,6 +108,10 @@ main {
 	scroll-snap-type: x mandatory;
 }
 
+.popupb {
+	transition: all 200ms ease-in-out;
+}
+
 ::-webkit-scrollbar {
 	width: 5px;
 }

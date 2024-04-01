@@ -46,7 +46,7 @@ export default function Home() {
 		{
 			name: "Atharva Chauhan",
 			role: "Vice President",
-			image: "/team/atharva.jpg",
+			image: "/team/atharv.png",
 		},
 		{
 			name: "Arnav Kashyap",
@@ -61,12 +61,37 @@ export default function Home() {
 		{
 			name: "Harshit",
 			role: "Photography Head",
-			image: "/team/harshit.jpg",
+			image: "/team/harshit.jpeg",
 		},
 		{
 			name: "Lavnika",
 			role: "Photography Head",
 			image: "/team/lavnika.jpg",
+		},
+		{
+			name: "Aneira",
+			role: "Designing Head",
+			image: "/team/aneira.jpg",
+		},
+		{
+			name: "Akshat",
+			role: "Web Development Head",
+			image: "/team/aks.jpg",
+		},
+		{
+			name: "Parth",
+			role: "Designing Head",
+			image: "/team/Parth.png",
+		},
+		{
+			name: "Sashreek",
+			role: "Gaming Head",
+			image: "/team/sashreek.jpg",
+		},
+		{
+			name: "AR Nadal",
+			role: "Programmer",
+			image: "/team/AR Nadal Verma.jpg",
 		},
 	];
 	const Skeleton = () => {
@@ -820,7 +845,7 @@ export default function Home() {
 					<b>The first 18 teams to register will be allowed to participate.</b>
 				</h2>
 
-				<a href="robo.pdf" className="shade">
+				<a href="/events/robo.pdf" className="shade">
 					Click To Know More
 				</a>
 			</div>
@@ -871,7 +896,7 @@ export default function Home() {
 					</li>
 				</ol>
 
-				<a href="aqua.pdf" className="shade">
+				<a href="/events/aquadash.pdf" className="shade">
 					Click To Know More
 				</a>
 			</div>
@@ -980,16 +1005,18 @@ export default function Home() {
 				<main
 					id="about"
 					className={
-						"dark h-screen grid grid-cols-2 place-items-center overflow-hidden " +
+						"dark h-screen grid grid-cols-2 place-items-center overflow-hidden pb-[4rem]" +
 						montserrat.className
 					}
 				>
+				
 					<div
 						onMouseEnter={() => setHoveredLeft(true)}
 						onMouseLeave={() => setHoveredLeft(false)}
 						className="h-full flex flex-col overflow-hidden items-center justify-evenly bg-black w-full gap-4 mx-auto px-8 relative"
 						ref={ordinRef}
 					>
+					
 
 						<div className="h-2/5 object-cover z-20 grid place-items-center"><img src="ordinlogo.png"/></div>
 						<p className="md:text-2xl text-xl font-medium text-center text-white relative z-20 max-w-2xl mx-auto mb-20">
@@ -1081,7 +1108,7 @@ export default function Home() {
 					>
 						GUIDELINES
 					</div>
-					<div className="w-4/5 max-w-5xl flex gap-[3rem] mt-[2rem]">
+					<div className="w-4/5 max-w-5xl flex gap-[7rem] mt-[2rem]">
 						<ul className="w-1/2 space-y-12 list-disc">
 							<li>
 								ONLINE registrations will be done on a first come first served
@@ -1134,9 +1161,16 @@ export default function Home() {
 						</ul>
 					</div>
 				</main>
+				<main id="trailer"
+					className="dark min-h-screen flex justify-center item-center overflow-hidden relative"
+					>
+					<div className="trail text-[5vw] mb-4 mt-[12rem]">TRAILER</div>
+					
+					<video src="/trailer.mp4" className="w-[60rem] rounded h-[30rem]" autoPlay/>
+					</main>
 				{showPopup[0] && (
-					<div className="fixed inset-0 bg-black/50 dark:bg-black/90 flex justify-center items-center z-20">
-						<div className="bg-neutral-950 w-[80vw] h-[90vh] p-8 rounded-lg flex flex-col overflow-y-scroll" ref={popUpRef}>
+					<div className="fixed inset-0 bg-black/50 dark:bg-black/90 flex justify-center items-center z-20 popupb">
+						<div className="bg-neutral-950 w-[80vw] h-[90vh] p-8 rounded-lg flex flex-col overflow-y-scroll popupb" ref={popUpRef}>
 							<div className="flex flex-row justify-between items-center">
 								<div
 									className={
