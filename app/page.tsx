@@ -132,7 +132,7 @@ export default function Home() {
 		},
 		{
 			title: "@Synapse",
-			description: "Discover the beauty of thoughtful and functional design.",
+			description: "An AI based pitching event where participants present their business ideas to address the given prompt ",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/synapse.png",
@@ -140,42 +140,42 @@ export default function Home() {
 		{
 			title: "@Arcadia",
 			description:
-				"Understand the impact of effective communication in our lives.",
+				"Competitors battle for glory in Valorant, showcasing skills and teamwork on the digital battlefield",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/arcadia.png",
 		},
 		{
 			title: "@CypherNexus",
-			description: "Join the quest for understanding and enlightenment.",
+			description: "Programmers engage in a riveting coding competition, demonstrating their algorithmic expertise and problem-solving skills",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/cyphernexus.png",
 		},
 		{
 			title: "@QuantaLens",
-			description: "Experience the thrill of bringing ideas to life.",
+			description: "Photographers must capture the essence of the moment where creativity meets technique to produce stunning images that write a story through the lens.",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/quantalens.png",
 		},
 		{
 			title: "@RoboRush",
-			description: "Embark on exciting journeys and thrilling discoveries.",
+			description: "Participants pit their bots against each other in a thrilling race of speed and agility, showcasing cutting-edge robotics technology.",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/roborush.png",
 		},
 		{
 			title: "@AquaDash",
-			description: "Embark on exciting journeys and thrilling discoveries.",
+			description: "Participants race innovative water bots, pushing robotics boundaries for aquatic supremacy.",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/aquadash.png",
 		},
 		{
 			title: "@TechTales",
-			description: "Embark on exciting journeys and thrilling discoveries.",
+			description: "Participants must weave tales and bring their characters to life in a competition of creativity and imagination through the medium of comic strips",
 			header: <Skeleton />,
 			url: "/",
 			thumbnail: "/events/TechTales.png",
@@ -260,7 +260,7 @@ export default function Home() {
 
 				<ol className="list-disc">
 					<li className="item" id="point">
-						Quality of deliverables
+						Objective of the Project 
 					</li>
 
 					<li className="item" id="point">
@@ -268,11 +268,14 @@ export default function Home() {
 					</li>
 
 					<li className="item" id="point">
-						Business Idea
+						Project Design and Construction Compatibility 
+					</li>
+					<li className="item" id="point">
+						Problem solving and solution
 					</li>
 
 					<li className="item" id="point">
-						Problem solving and solution
+						Implementation and feasibility in the market
 					</li>
 				</ol>
 			</div>
@@ -289,7 +292,7 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 6th to 12th
+						Eligibilty: 9th to 12th
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -301,8 +304,7 @@ export default function Home() {
 					</h2>
 
 					<h2 className="text information" id="mode">
-						Mode: Prelims- Submission based;
-						<br /> Finals- 9 May 2024 (Offline)
+						Mode:  9 May 2024 (Offline)
 					</h2>
 				</div>
 
@@ -311,68 +313,13 @@ export default function Home() {
 						<b>The first 16 teams to register will be allowed to participate</b>
 					</li>
 
-					<li className="item" id="point">
-						They must submit a word document containing the synopsis of their
-						idea containing a description and the problem statement
-					</li>
-
-					<li className="item" id="point">
-						They must also submit a video of 2-3 minutes showcasing the video of
-						the model
-					</li>
-
-					<li className="item" id="point">
-						The result of prelims will be shared on Wednesday 01 May 2024.
-					</li>
-
-					<li className="item" id="point">
-						A total of 25 teams will be selected for the final round which will
-						be held offline in the school premises.
-					</li>
-
-					<li className="item" id="point">
-						Participants have to present their project/idea and are required to
-						use a working model for the same .
-					</li>
-
-					<li className="item" id="point">
-						Participants will be given 5 minutes to present their ideas on the
-						final day.
-					</li>
-
-					<li className="item" id="point">
-						The theme must be applied in reference to SDG Goals
-					</li>
-
-					<li className="item" id="point">
-						<b>
-							The results for the prelims will be announced on Saturday 01 May
-							2024.
-						</b>
-					</li>
+					
 				</ol>
+				<a href="/events/mecha.pdf" className="shade">
+					Click To Know More
+				</a>
 
-				<h2 className="text" id="subtext">
-					Judgment criteria:
-				</h2>
-
-				<ol className="list-disc">
-					<li className="item" id="point">
-						Quality of deliverables
-					</li>
-
-					<li className="item" id="point">
-						Originality/ Creativity
-					</li>
-
-					<li className="item" id="point">
-						Business Idea
-					</li>
-
-					<li className="item" id="point">
-						Problem solving and solution
-					</li>
-				</ol>
+				
 			</div>
 		),
 		"@Synapse": (
@@ -402,18 +349,37 @@ export default function Home() {
 					</h2>
 				</div>
 
+	
 				<h2 className="text" id="subtext">
-					The submission link will be shared with the prompt.
+					<b>Prelims:</b>
+
 				</h2>
+				
+				<ol className="list-disc"> 
+					
+
+					<li className="item" id="point">
+						Develop a business idea/product/service that leverages Artificial Intelligence to address a prompt which will be released on Saturday 20 April 2024. 
+					</li>
+
+					<li className="item" id="point">
+						The submission link will be shared with the prompt.
+
+					</li>
+
+					<li className="item" id="point">
+						Submission to be done by Wednesday, 01 May 2024
+
+					</li>
+
+				</ol>
 
 				<h2 className="text" id="subtext">
-					Submission Requirements:
+					<b>Submission Requirements:</b>
 				</h2>
 
 				<ol className="list-disc">
-					<li className="item" id="point">
-						Deliverables (Due by 11:59 PM, Wednesday 01 May 2024):
-					</li>
+					
 
 					<li className="item" id="point">
 						3-D model/UI design
@@ -454,7 +420,7 @@ export default function Home() {
 				</ol>
 
 				<h2 className="text" id="subtext">
-					Judgment criteria:
+					<b>Judgment criteria:</b>
 				</h2>
 
 				<ol className="list-disc">
@@ -482,7 +448,7 @@ export default function Home() {
 				</h2>
 
 				<h2 className="text" id="subtext">
-					Finals:
+					<b>Finals:</b>
 				</h2>
 
 				<ol className="list-disc">
@@ -528,88 +494,11 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 8th to 12th
+						Eligibilty: 9th to 12th
 					</h2>
 
 					<h2 className="text information" id="participant">
-						Number of Participants: 4
-					</h2>
-
-					<h2 className="text information" id="participant">
-						No of teams allowed per school: 1
-					</h2>
-
-					<h2 className="text information" id="mode">
-						Mode: Online
-					</h2>
-				</div>
-
-				<h2 className="text" id="subtext">
-					Software minimum requirements:
-				</h2>
-
-				<ol className="list-disc">
-					<li className="item" id="point">
-						Windows 7/8/10 64-bit
-					</li>
-
-					<li className="item" id="point">
-						Ram 4GB
-					</li>
-
-					<li className="item" id="point">
-						VRAM 1GB
-					</li>
-
-					<li className="item" id="point">
-						Recommended Specs: CPU: Intel i3-4150 | GPU: Geforce GT 730
-					</li>
-				</ol>
-
-				<ol className="list-disc">
-					<li className="item" id="point">
-						The event will start at 9:30 am onwards on Saturday 4 May 2024 and
-						Sunday 5 May 2024. The Discord Server link has been given in the
-						General Guidelines. Only the registered participants would get the
-						access to the gaming channel after verification. Participants are
-						requested to join the server at least two days prior to the event
-						with their real names.
-					</li>
-
-					<li className="item" id="point">
-						The schedule will be laid out in advance on the Discord Server
-						itself. Timings will be fixed, no change in schedule will be
-						entertained afterwards.
-					</li>
-
-					<li className="item" id="point">
-						During verification, participants are also requested to post their
-						in-game ID’s below their real name and only registered accounts will
-						be allowed to join the tournament custom. If any unregistered
-						account joins the custom lobby, they will be removed instantly.
-					</li>
-
-					<li className="item" id="point">
-						The use of any kind of hack and/or aimbot is strictly prohibited.
-					</li>
-				</ol>
-			</div>
-		),
-		"@CypherNexus": (
-			<div className="space-y-4">
-				<p className="text" id="description-popup">
-					The game to be played is ‘VALORANT’ in a 5v5 mode. All teams will be
-					put into brackets and all the matches in the tournament will be
-					knockouts except the semi finals and finals which will be a best of 3.
-				</p>
-
-				<div className="eventcontent">
-					<h2 className="text information" id="elig">
-						Eligibilty: 8th to 12th
-					</h2>
-
-					<h2 className="text information" id="participant">
-						Number of Participants: 4
+						Number of Participants: 5
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -672,6 +561,7 @@ export default function Home() {
 				</ol>
 			</div>
 		),
+		
 		"@QuantaLens": (
 			<div className="space-y-4">
 				<p className="text" id="description-popup">
@@ -681,7 +571,7 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 8th to 12th
+						Eligibilty: 9th to 12th
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -702,15 +592,15 @@ export default function Home() {
 				</h2>
 
 				<ol className="list-disc">
-					<li className="item" id="point">
-						A prompt will be released on Saturday 20 April 2024 and participants
-						are required to submit a picture which correlates to the given
-						prompt.
-					</li>
+
 
 					<li className="item" id="point">
 						Submit JPEG photographs with metadata and a related caption/story.
 						Photos must have been clicked after 01 January 2024.
+					</li>
+					<li className="item" id="point">
+						Submission to be done by Wednesday, 01 May 2024
+
 					</li>
 
 					<li className="item" id="point">
@@ -778,8 +668,7 @@ export default function Home() {
 					</li>
 
 					<li className="item" id="point">
-						Topics will be released two days prior to the offline event through
-						the official communication channels.
+						The participants will have to bring their own DSLR to click pictures (phone photography is not permitted).
 					</li>
 
 					<li className="item" id="point">
@@ -825,7 +714,7 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 6th to 12th
+						Eligibilty: 9th to 12th
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -842,7 +731,7 @@ export default function Home() {
 				</div>
 
 				<h2 className="text" id="subtext">
-					<b>The first 18 teams to register will be allowed to participate.</b>
+					<b>The first 16 teams to register will be allowed to participate.</b>
 				</h2>
 
 				<a href="/events/robo.pdf" className="shade">
@@ -860,7 +749,7 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 6th to 12th
+						Eligibilty: 6th to 8th
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -879,7 +768,7 @@ export default function Home() {
 				<ol className="list-disc">
 					<li className="item" id="point">
 						<b>
-							The first 18 teams to register will be allowed to participate.
+							The first 16 teams to register will be allowed to participate.
 						</b>
 					</li>
 
@@ -901,8 +790,74 @@ export default function Home() {
 				</a>
 			</div>
 		),
+		"@CypherNexus": (
+<div>
+				
+				
+			<h2 className="text information" id="lang"><b>Prelims</b></h2>
+				<ol className="list-disc">
+					<li className="item" id="point">
+						<b>Duration: 1 Hour 15 Minutes</b>
+					</li>
+					<li className="item" id="point">
+						<b>Date and time: Tuesday, 30 April 2024, 5:00 pm
+</b>
+					</li>
+					<li className="item" id="point">
+						<b>Platform:  Hackerrank
+</b>
+					</li>
+					<li className="item" id="point">
+						Participants will have to join a Google Meet link for the duration of the contest. The link will be released on Discord 30 minutes before the event commences.
+					</li>
+					<li className="item" id="point">
+						Participants found to have simply copied the code, would be immediately disqualified. Participants may be asked to explain their code after the online round has finished. Use of ChatGPT is strictly prohibited.
+
+					</li>
+					<li className="item" id="point">
+						Each problem will have a predetermined score and the participants’ score will depend on the number of successful test cases. The difficulty and the score of each problem increases as participants progress through the contest.
+
+					</li>
+					<li className="item" id="point">
+						Participants will be ranked by their scores. If two or more participants achieve the same score, then the tie will be broken by the total time taken to submit the last solution.
+
+					</li>
+				</ol>
+				<h2 className="text information" id="lang"><b>The results of the prelims will be announced on Saturday, 04 May 2024 with the list of participants for the finals
+</b></h2>
+
+				<h2 className="text information" id="lang"><b>Judgement Criteria:</b></h2>
+				<ol className="list-disc">
+					<li className="item" id="point">
+						Completion of Programs
+
+					</li>
+					<li className="item" id="point">
+						Correct Execution/ Clarity
+
+
+					</li>
+					<li className="item" id="point">
+						Correct Output - Test Cases Passed
+
+
+					</li>
+						<li className="item" id="point">
+						Time Taken
+
+
+
+					</li>
+					
+				</ol>
+					<a href="/events/cyber.pdf" className="shade">
+					Click To Know More
+				</a>
+			</div>
+		),
 		"@TechTales": (
-			<div>
+		
+			<div className="space-y-4">
 				<p className="text" id="description-popup">
 					Participants navigate the waves of innovation as their bots compete in
 					a thrilling race, pushing the boundaries of autonomous technology on
@@ -911,7 +866,7 @@ export default function Home() {
 
 				<div className="eventcontent">
 					<h2 className="text information" id="elig">
-						Eligibilty: 6th to 12th
+						Eligibilty: 4th to 5th
 					</h2>
 
 					<h2 className="text information" id="participant">
@@ -927,27 +882,34 @@ export default function Home() {
 					</h2>
 				</div>
 
+				
+
+				<h2 className="text information" id="lang"><b>Judgement Criteria:</b></h2>
 				<ol className="list-disc">
 					<li className="item" id="point">
-						<b>
-							The first 18 teams to register will be allowed to participate.
-						</b>
+						Originality
 					</li>
-
 					<li className="item" id="point">
-						To design and build a manually controlled boat that has to sail
-						through the obstacles in the arena and complete the race task before
-						the other boat. The boat should compulsorily be wireless and powered
-						by batteries. Wired boats are NOT allowed.
-					</li>
+						Creativity
 
-					<li className="item" id="point">
-						Teams will have to compete in the given arena, starting from two
-						opposite ends. The boat which reaches the other end first will win.
+
 					</li>
+					<li className="item" id="point">
+						Software Utilization
+
+
+
+					</li>
+						<li className="item" id="point">
+						Overall Presentation 
+
+
+
+
+					</li>
+					
 				</ol>
-
-				<a href="aqua.pdf" className="shade">
+				<a href="/events/tech.pdf" className="shade">
 					Click To Know More
 				</a>
 			</div>
