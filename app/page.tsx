@@ -946,12 +946,12 @@ export default function Home() {
 		<body className="dark">
 			<main
 				id="home"
-				className="dark h-screen grid grid-rows-3 place-items-center overflow-hidden bg-[conic-gradient(var(--tw-gradient-stops))] from-[#0084B0] to-[#000608]"
+				className="min-[300px]:h-[35rem] dark h-screen grid grid-rows-3 place-items-center overflow-hidden bg-[conic-gradient(var(--tw-gradient-stops))] from-[#0084B0] to-[#000608]"
 			>
-				<FloatingNav navItems={navItems} showPopup={showPopup} />
+				<FloatingNav navItems={navItems} showPopup={showPopup}className="min-[300px]:hidden "/>
 				<div
 					className={
-						"tracking-[0.4vw] text-[30px] self-end " + helvetica.className
+						"min-[300px]:ml-[5rem] tracking-[0.4vw] text-[30px] self-end" + helvetica.className
 					}
 				>
 					<span className="text-cyan-400">PYROTECH CLUB</span> &{" "}
@@ -1060,17 +1060,17 @@ export default function Home() {
 				</main>
 				<main
 					id="guidelines"
-					className="dark h-screen flex flex-col items-center overflow-hidden justify-evenly pt-7 pb-[50.75rem]"
+					className="min-[300px]:h-[150rem] dark h-screen flex flex-col items-center overflow-hidden justify-evenly pt-7 pb-[50.75rem]"
 				>
 					<div
 						className={
-							"guidelines text-[15vh] leading-none z-0 mt-[3rem] " +
+							"min-[300px]:text-[5vh] guidelines text-[15vh] leading-none z-0 mt-[3rem] " +
 							montserrat.className
 						}
 					>
 						GUIDELINES
 					</div>
-					<div className="w-4/5 max-w-5xl flex gap-[7rem] mt-[2rem]">
+					<div className="min-[300px]:flex-col w-4/5 max-w-5xl flex gap-[7rem] mt-[2rem] ">
 						<ul className="w-1/2 space-y-12 list-disc">
 							<li>
 								ONLINE registrations will be done on a first come first served
@@ -1126,7 +1126,7 @@ export default function Home() {
 				<main id="trailer"
 					className="dark min-h-screen flex justify-center item-center overflow-hidden relative"
 					>
-					<div className="trail text-[5vw] mb-4 mt-[12rem]">TRAILER</div>
+					<div className="min-[300px]:hidden trail text-[5vw] mb-4 mt-[12rem]">TRAILER</div>
 					
 					<video src="/trailer.mp4" className="w-[60rem] rounded h-[30rem]" autoPlay/>
 					</main>
@@ -1221,7 +1221,7 @@ export default function Home() {
 						))}
 					</Carousel>
 				</main>
-				<main className="h-[40vh] bg-[#00070b]" id="contact">
+				<main className="min-[300px]:hidden h-[40vh] bg-[#00070b] " id="contact">
 					<div className="dark flex justify-around items-center h-full">
 						<div>
 							<h1 className="text-2xl mb-3">HAVE ANY QUERIES?</h1>

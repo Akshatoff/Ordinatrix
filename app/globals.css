@@ -121,3 +121,10 @@ main {
 ::-webkit-scrollbar-thumb {
 	background: #0061cf;
 }
+
+
+@media screen and (min-width=300px) {
+	body,html {
+	overflow-x:hidden;
+	}
+}
